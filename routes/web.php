@@ -14,3 +14,16 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+
+/**
+ * Merchant API
+ */
+
+$router->get('merchant','MerchantController@index');
+$router->post('merchant','MerchantController@store');
+$router->post('merchant/validate','MerchantController@validateForm');
+$router->put('merchant/{id}','MerchantController@update');
+$router->delete('merchant/{id}','MerchantController@destroy');
+$router->get('merchant/{id}','MerchantController@show');
+
