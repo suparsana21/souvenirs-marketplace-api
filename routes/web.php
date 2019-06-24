@@ -37,3 +37,16 @@ $router->post('unit/validate','UnitController@validateForm');
 $router->put('unit/{id}','UnitController@update');
 $router->delete('unit/{id}','UnitController@destroy');
 $router->get('unit/{id}','UnitController@show');
+
+
+/**
+ * Category API
+ */
+
+$router->get('category','CategoryController@index');
+$router->post('category','CategoryController@store');
+$router->post('category/validate','CategoryController@validateForm');
+$router->put('category/{id}','CategoryController@update');
+$router->delete('category/{id}','CategoryController@destroy');
+$router->get('category/{id}','CategoryController@show');
+
