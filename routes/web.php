@@ -27,3 +27,16 @@ $router->put('merchant/{id}','MerchantController@update');
 $router->delete('merchant/{id}','MerchantController@destroy');
 $router->get('merchant/{id}','MerchantController@show');
 
+
+
+/**
+ * Category API
+ */
+
+$router->get('category','CategoryController@index');
+$router->post('category','CategoryController@store');
+$router->post('category/validate','CategoryController@validateForm');
+$router->put('category/{id}','CategoryController@update');
+$router->delete('category/{id}','CategoryController@destroy');
+$router->get('category/{id}','CategoryController@show');
+
