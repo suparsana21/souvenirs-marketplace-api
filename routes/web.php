@@ -27,3 +27,13 @@ $router->put('merchant/{id}','MerchantController@update');
 $router->delete('merchant/{id}','MerchantController@destroy');
 $router->get('merchant/{id}','MerchantController@show');
 
+/**
+ * Unit API
+*/
+
+$router->get('unit','UnitController@index');
+$router->post('unit','UnitController@store');
+$router->post('unit/validate','UnitController@validateForm');
+$router->put('unit/{id}','UnitController@update');
+$router->delete('unit/{id}','UnitController@destroy');
+$router->get('unit/{id}','UnitController@show');
