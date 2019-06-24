@@ -1,12 +1,12 @@
 <?php
-namespace DummyNamespace;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DummyRootNamespaceHttp\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 
 
-class DummyClass extends Controller
+class ProductController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,21 +22,10 @@ class DummyClass extends Controller
      * Display a listing of the resource.
      * @return \Illuminate\Http\Response
      */
-     *
+
     public function index(Request $request)
     {
         //
-    }
-
-    /**
-     * Validate Json Body
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function validateForm(Request $request)
-    {
-       //
     }
 
     /**
